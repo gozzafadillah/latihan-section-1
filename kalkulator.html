@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan github</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #title {
+      text-align: center;
+    }
+    .tombol {
+      margin: 25px 0;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+  <body>
+    <h1 id="title">Latihan Section 1, Kalkulator</h1>
+
+    <p id="hello"></p>
+    <div class="container">
+      <center>
+        <input type="number" id="a" />
+        <input type="number" id="b" />
+        <div class="tombol">
+          <button onclick="tambah()">+</button>
+          <button onclick="kurang()">-</button>
+          <button onclick="kali()">x</button>
+          <button onclick="bagi()">/</button>
+        </div>
+        <p style="margin: 20px 0" id="hasil"></p>
+        <br />
+
+        <a href="kalkulator.html">Halaman Utama</a>
+      </center>
+    </div>
+    <script>
+      let hasil;
+      function tambah() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        hasil = a * 1 + b * 1;
+        document.getElementById("hasil").innerHTML = `${hasil}`;
+      }
+      function kurang() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        hasil = a * 1 - b * 1;
+        document.getElementById("hasil").innerHTML = `${hasil}`;
+      }
+      function kali() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        hasil = a * 1 * (b * 1);
+        document.getElementById("hasil").innerHTML = `${hasil}`;
+      }
+      function bagi() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        hasil = (a * 1) / (b * 1);
+        document.getElementById("hasil").innerHTML = `${hasil}`;
+      }
+    </script>
+  </body>
+</html>
