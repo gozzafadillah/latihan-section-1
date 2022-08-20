@@ -16,6 +16,9 @@
     p {
       margin: 0 0px 0 10px;
     }
+    .tombol {
+      margin: 20px 0;
+    }
   </style>
   <body>
     <h1 id="title">Latihan Section 1, Hello function</h1>
@@ -24,5 +27,20 @@
       impedit pariatur, earum reprehenderit blanditiis? Ab similique distinctio
       accusamus necessitatibus.
     </p>
+    <p id="hello"></p>
+    <div class="container">
+      <center>
+        <div class="tombol">
+          <button onclick="hello()">Tekan</button>
+        </div>
+      </center>
+    </div>
+    <script>
+      let i = 1;
+      function hello() {
+        document.getElementById("hello").innerHTML = `Helo World ${i}`;
+        i++;
+      }
+    </script>
   </body>
 </html>
